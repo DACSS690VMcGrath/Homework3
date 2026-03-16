@@ -1,0 +1,40 @@
+---
+title: "My HW3 for DACS 690V Spring"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard) # always
+```
+
+## Intro {.sidebar}
+
+Author: Patrick McGrath<br>DACSS690V Spring 2026
+
+### References
+<div id="refs"></div>
+
+## Row {data-height="500"}
+
+### **Types of Schools Plot** 
+
+```{r}
+## for del1Draft.rds
+link1="C:/Users/patri/OneDrive/Desktop/DACSS/DACSS690V/Week_3_HW/plot_1.rds"
+readRDS(link1)
+```
+
+### **Teachers Distributions**
+
+```{r}
+## for del2Draft.rds
+#link2=""
+link2="C:/Users/patri/OneDrive/Desktop/DACSS/DACSS690V/Week_3_HW/plot_2.rds"
+readRDS(link2)
+```
+
+
+
+
