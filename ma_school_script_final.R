@@ -1,16 +1,18 @@
 #DACSS690V HW3 Script
 #Load data -----MAKE SURE TO CHANGE TO PULL FROM GITHUB
-setwd("C:/Users/patri/OneDrive/Desktop/DACSS/DACSS690V/Week_3_HW")
 
 pacman::p_load(tidyverse, dplyr, janitor, readxl, ggplot2, magrittr, psych, ggridges)
-ma_school_df <- read_excel("C:/Users/patri/OneDrive/Desktop/DACSS/DACSS690V/Week_3_HW/ncesdata_MASS_202425.xlsx")
-#Pre process data - check data types
-ma_school_df <- ma_school_df |> 
-  slice(11:1835) |> 
-  row_to_names(row_number = 1) |> 
-  mutate(
-         Teachers = as.numeric(Teachers),#INtroducing NAs - where data was missing
-         Type = as.factor(Type))
+
+link <- "https://github.com/DACSS690VMcGrath/Homework3/raw/main/ncesdata_MASS_202425.csv"
+ma_school_df <- read_csv(link)
+
+#Pre process data - check data types ---done prior to upload to github
+#ma_school_df <- ma_school_df |> 
+#  slice(11:1835) |> 
+#  row_to_names(row_number = 1) |> 
+#  mutate(
+#         Teachers = as.numeric(Teachers),#INtroducing NAs - where data was missing
+#         Type = as.factor(Type))
 
 #Create two visualizations - one cat, one num
 #-----Plot 1: Categorical - Type (Other/alternative, Regular, Special Education, Vocational) - Bar chart------
