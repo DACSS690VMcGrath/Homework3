@@ -1,5 +1,6 @@
 ---
 title: "My HW3 for DACSS 690V Spring"
+bibliography: testVisual.bib
 output: 
   flexdashboard::flex_dashboard:
     orientation: rows
@@ -14,6 +15,7 @@ library(flexdashboard) # always
 Author: Patrick McGrath<br>DACSS690V Spring 2026
 
 ### References
+@noauthor_ncees_2026
 <div id="refs"></div>
 
 ## Row {data-height="500"}
