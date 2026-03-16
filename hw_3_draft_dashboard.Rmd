@@ -22,8 +22,9 @@ Author: Patrick McGrath<br>DACSS690V Spring 2026
 
 ```{r}
 ## for del1Draft.rds
-link1="C:/Users/patri/OneDrive/Desktop/DACSS/DACSS690V/Week_3_HW/plot_1.rds"
-readRDS(link1)
+#link1="C:/Users/patri/OneDrive/Desktop/DACSS/DACSS690V/Week_3_HW/plot_1.rds"
+link1 <- "https://github.com/DACSS690VMcGrath/Homework3/raw/main/plot_1.rds"
+readRDS(url(link1))
 ```
 
 ### **Teachers Distributions**
@@ -31,8 +32,8 @@ readRDS(link1)
 ```{r}
 ## for del2Draft.rds
 #link2=""
-link2="C:/Users/patri/OneDrive/Desktop/DACSS/DACSS690V/Week_3_HW/plot_2.rds"
-readRDS(link2)
+link2="https://github.com/DACSS690VMcGrath/Homework3/raw/main/plot_2.rds"
+readRDS(url(link2))
 ```
 
 
