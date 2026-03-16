@@ -1,5 +1,5 @@
 ---
-title: "My HW3 for DACS 690V Spring"
+title: "My HW3 for DACSS 690V Spring"
 output: 
   flexdashboard::flex_dashboard:
     orientation: rows
@@ -18,11 +18,9 @@ Author: Patrick McGrath<br>DACSS690V Spring 2026
 
 ## Row {data-height="500"}
 
-### **Types of Schools Plot** 
+### **School Types** 
 
 ```{r}
-## for del1Draft.rds
-#link1="C:/Users/patri/OneDrive/Desktop/DACSS/DACSS690V/Week_3_HW/plot_1.rds"
 link1 <- "https://github.com/DACSS690VMcGrath/Homework3/raw/main/plot_1.rds"
 readRDS(url(link1))
 ```
@@ -30,8 +28,6 @@ readRDS(url(link1))
 ### **Teachers Distributions**
 
 ```{r}
-## for del2Draft.rds
-#link2=""
 link2="https://github.com/DACSS690VMcGrath/Homework3/raw/main/plot_2.rds"
 readRDS(url(link2))
 ```
