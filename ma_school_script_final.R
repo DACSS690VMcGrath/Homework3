@@ -42,7 +42,8 @@ plot_1 <- type_percentages_df |>
     axis.title = element_blank(),
     axis.line.y.left = element_line(color = "black")) +
   labs(#title="Types of Schools",
-       subtitle = "The Vast Majority of Schools in MA are Classified as Regular") +
+       subtitle = "The Vast Majority of Schools in MA are Classified as Regular",
+       caption = "CCD public school data for the 2024-2025 school year") +
   theme(panel.border = element_rect(color = "white", fill = NA, linewidth = 2),
         plot.background = element_rect(color = "white", linewidth = 5)) + 
   theme(axis.text.x = element_blank())
@@ -64,7 +65,7 @@ plot_2 <- ma_school_df |>
   theme_minimal() +
   #coord_flip() +
   labs(
-    #title = "Teachers",
+    caption = "CCD public school data for the 2024-2025 school year",
     subtitle = "Most Schools in MA have less than the Average Number of Teachers",
     x = NULL,
     y = NULL
